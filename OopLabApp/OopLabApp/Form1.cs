@@ -16,5 +16,24 @@ namespace OopLabApp
         {
             InitializeComponent();
         }
+
+        private void Adminbtn_Click(object sender, EventArgs e)
+        {
+            FormAdmin formAdmin = new FormAdmin();
+            formAdmin.Show(); //FormAdmini göster.
+            this.Hide(); //Form1 sakla.
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void Userbtn_Click(object sender, EventArgs e)
+        {
+            FormUser formUser = new FormUser();
+            formUser.Show();  //FormUseri göster.
+            this.Hide();    // Form1 sakla.
+        }
     }
 }
