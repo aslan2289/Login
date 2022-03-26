@@ -21,5 +21,22 @@ namespace OopLabApp
         {
             Application.Exit();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            string user, pass;
+            user = txtUser.Text;
+            pass = txtPassword.Text;
+
+            if(user=="admin" && pass == "admin")
+            {
+                
+            }
+        }
     }
 }
