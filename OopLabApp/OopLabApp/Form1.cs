@@ -35,5 +35,10 @@ namespace OopLabApp
             formUser.Show();  //FormUseri göster.
             this.Hide();    // Form1 sakla.
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
