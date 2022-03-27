@@ -47,13 +47,13 @@ namespace OopLabApp
 
         private void Admintxt_TextChanged(object sender, EventArgs e)
         {
-            Admintxt.Focus();
-            this.AcceptButton = Adminlgn;
+            Admintxt.Focus(); //admin login penceresi acildiginda username textbox'ina focus ol
+            this.AcceptButton = Adminlgn; //adminform'da username textbox'inda enter tusu ile login yapma
         }
 
         private void Adminpsw_TextChanged(object sender, EventArgs e)
         {
-            this.AcceptButton = Adminlgn;
+            this.AcceptButton = Adminlgn; //adminform'da password textbox'inda enter tusu ile login yapma
         }
 
         private void FormAdmin_Load(object sender, EventArgs e)
