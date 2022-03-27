@@ -26,5 +26,20 @@ namespace OopLabApp
         {
             Application.Exit();
         }
+
+        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void difficToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void customToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
