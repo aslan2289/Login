@@ -23,7 +23,7 @@ namespace OopLabApp
             {
                 OyunPenceresi oyunPenceresi = new OyunPenceresi();
                 oyunPenceresi.Show(); //Oyunpenceresini göster
-                this.Hide(); //FromAdmini gizle
+                this.Hide(); //FormAdmini gizle
             }
             else if(Admintxt.Text=="" || Adminpsw.Text=="")
             {
@@ -42,6 +42,21 @@ namespace OopLabApp
         private void FormAdmin_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void Admintxt_TextChanged(object sender, EventArgs e)
+        {
+            Admintxt.Focus();
+        }
+
+        private void Adminpsw_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormAdmin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

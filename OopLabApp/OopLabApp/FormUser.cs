@@ -44,5 +44,20 @@ namespace OopLabApp
                 MessageBox.Show(message, title);
             }
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Usertxt_TextChanged(object sender, EventArgs e)
+        {
+            Usertxt.Select();
+        }
+
+        private void FormUser_Load(object sender, EventArgs e)
+        {
+            Usertxt.Focus();
+        }
     }
 }
