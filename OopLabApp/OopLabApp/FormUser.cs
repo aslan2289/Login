@@ -21,5 +21,49 @@ namespace OopLabApp
         {
             Application.Exit();
         }
+
+
+        private void Userlogin_Click(object sender, EventArgs e)
+        {
+            if (Usertxt.Text == "user" && Userpsw.Text == "user")
+            {
+                OyunPenceresi oyunPenceresi = new OyunPenceresi();
+                oyunPenceresi.Show(); //Oyunpenceresini göster.
+                this.Hide(); //Formuseri sakla.
+            }
+           else if (Usertxt.Text == "" || Userpsw.Text == "")
+            {
+                string message = "Belirli alanlar boş bırakılamaz";
+                string title = "Hata";
+                MessageBox.Show(message, title);
+            }
+            else
+            {
+                string message = "Kullanıcı adı veya parola hatalı";
+                string title = "Hata";
+                MessageBox.Show(message, title);
+            }
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Usertxt_TextChanged(object sender, EventArgs e)
+        {
+            Usertxt.Select();
+            this.AcceptButton = Userlogin; //userform'da username textbox'inda enter tusu ile login yapma
+        }
+
+        private void FormUser_Load(object sender, EventArgs e)
+        {
+            Usertxt.Focus(); //user login ekrani ilk acildiginda username textbox'ina focus ol
+        }
+
+        private void Userpsw_TextChanged(object sender, EventArgs e)
+        {
+            this.AcceptButton = Userlogin; //userform'da password textbox'inda enter tusu ile login yapma
+        }
     }
 }
