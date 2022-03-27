@@ -37,6 +37,7 @@ namespace OopLabApp
                 string title = "Hata";
                 MessageBox.Show(message, title);
             }
+
         }
 
         private void FormAdmin_FormClosing(object sender, FormClosingEventArgs e)
@@ -47,11 +48,12 @@ namespace OopLabApp
         private void Admintxt_TextChanged(object sender, EventArgs e)
         {
             Admintxt.Focus();
+            this.AcceptButton = Adminlgn;
         }
 
         private void Adminpsw_TextChanged(object sender, EventArgs e)
         {
-
+            this.AcceptButton = Adminlgn;
         }
 
         private void FormAdmin_Load(object sender, EventArgs e)

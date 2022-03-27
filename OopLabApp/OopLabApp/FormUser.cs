@@ -53,11 +53,17 @@ namespace OopLabApp
         private void Usertxt_TextChanged(object sender, EventArgs e)
         {
             Usertxt.Select();
+            this.AcceptButton = Userlogin;
         }
 
         private void FormUser_Load(object sender, EventArgs e)
         {
             Usertxt.Focus();
+        }
+
+        private void Userpsw_TextChanged(object sender, EventArgs e)
+        {
+            this.AcceptButton = Userlogin;
         }
     }
 }

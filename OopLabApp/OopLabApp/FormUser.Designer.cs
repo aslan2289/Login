@@ -76,6 +76,7 @@ namespace OopLabApp
             this.Userpsw.PasswordChar = '*';
             this.Userpsw.Size = new System.Drawing.Size(160, 20);
             this.Userpsw.TabIndex = 6;
+            this.Userpsw.TextChanged += new System.EventHandler(this.Userpsw_TextChanged);
             // 
             // Userlogin
             // 
