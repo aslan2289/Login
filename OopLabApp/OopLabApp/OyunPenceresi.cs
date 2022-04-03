@@ -24,7 +24,7 @@ namespace OopLabApp
 
         private void OyunPenceresi_FormClosing(object sender, FormClosingEventArgs e)
         {
-           
+
         }
 
         private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
@@ -46,7 +46,7 @@ namespace OopLabApp
         {
             Ayarlar ayarlarpencere = new Ayarlar();
             ayarlarpencere.Show(); //ayarlarpenceresini göster.
-         
+
         }
     }
 }

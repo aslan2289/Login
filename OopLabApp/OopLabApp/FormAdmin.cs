@@ -19,17 +19,17 @@ namespace OopLabApp
 
         private void Adminlgn_Click(object sender, EventArgs e)
         {
-            if(Admintxt.Text=="admin" && Adminpsw.Text=="admin")
+            if (Admintxt.Text == "admin" && Adminpsw.Text == "admin")
             {
                 OyunPenceresi oyunPenceresi = new OyunPenceresi();
                 oyunPenceresi.Show(); //Oyunpenceresini göster
                 this.Hide(); //FormAdmini gizle
             }
-            else if(Admintxt.Text=="" || Adminpsw.Text=="")
+            else if (Admintxt.Text == "" || Adminpsw.Text == "")
             {
                 string message = "Belirli alanlar boş bırakılamaz";
                 string title = "Hata";
-                MessageBox.Show(message,title);
+                MessageBox.Show(message, title);
             }
             else
             {
@@ -45,36 +45,6 @@ namespace OopLabApp
             Application.Exit();
         }
 
-<<<<<<< HEAD
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-
-        //login butonu
-        private void btnLogin_Click(object sender, EventArgs e)
-        {
-            //username ve password stringleri tanımlama
-            string user, pass; 
-            user = txtUser.Text; 
-            pass = txtPassword.Text;
-
-            //username ve password'un istenilen textleri karsilayip karsilamadigini kontrol etme  
-            if(user=="admin" && pass == "admin")
-            {
-                FormGame formGame = new FormGame(); 
-                formGame.Show(); //FormGame'i goster
-                this.Hide(); // FormAdmin'i gizle
-                
-            }
-            //eger istenilen text disinda text girilirse bir message box ile hata mesaji goster
-            else
-            {
-                MessageBox.Show("Username or passwords is incorrect!");
-            }
-        }
-=======
         private void Admintxt_TextChanged(object sender, EventArgs e)
         {
             Admintxt.Focus(); //admin login penceresi acildiginda username textbox'ina focus ol
@@ -90,6 +60,5 @@ namespace OopLabApp
         {
 
         }
->>>>>>> main
     }
 }

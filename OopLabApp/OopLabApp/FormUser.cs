@@ -22,16 +22,6 @@ namespace OopLabApp
             Application.Exit();
         }
 
-<<<<<<< HEAD
-        private void FormUser_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-=======
 
         private void Userlogin_Click(object sender, EventArgs e)
         {
@@ -41,7 +31,7 @@ namespace OopLabApp
                 oyunPenceresi.Show(); //Oyunpenceresini göster.
                 this.Hide(); //Formuseri sakla.
             }
-           else if (Usertxt.Text == "" || Userpsw.Text == "")
+            else if (Usertxt.Text == "" || Userpsw.Text == "")
             {
                 string message = "Belirli alanlar boş bırakılamaz";
                 string title = "Hata";
@@ -53,7 +43,6 @@ namespace OopLabApp
                 string title = "Hata";
                 MessageBox.Show(message, title);
             }
->>>>>>> main
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -61,29 +50,6 @@ namespace OopLabApp
 
         }
 
-<<<<<<< HEAD
-        //login butonu
-        private void btnLogin_Click(object sender, EventArgs e)
-        {
-            //username ve password stringleri tanımlama
-            string user, pass;
-            user = txtUser.Text;
-            pass = txtPassword.Text;
-
-            //username ve password'un istenilen textleri karsilayip karsilamadigini kontrol etme  
-            if (user=="user"&& pass=="user")
-            {
-                FormGame formGame = new FormGame();
-                formGame.Show(); //FormGame'i goster
-                this.Hide(); //FormUser'i gizle
-            }
-
-            //eger istenilen text disinda text girilirse bir message box ile hata mesaji goster
-            else
-            {
-                MessageBox.Show("Username or password is incorrect!");
-            }
-=======
         private void Usertxt_TextChanged(object sender, EventArgs e)
         {
             Usertxt.Select();
@@ -98,7 +64,6 @@ namespace OopLabApp
         private void Userpsw_TextChanged(object sender, EventArgs e)
         {
             this.AcceptButton = Userlogin; //userform'da password textbox'inda enter tusu ile login yapma
->>>>>>> main
         }
     }
 }
