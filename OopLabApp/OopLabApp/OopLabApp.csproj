@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ayarlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ayarlar.Designer.cs">
+      <DependentUpon>Ayarlar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,8 +76,17 @@
     <Compile Include="FormUser.Designer.cs">
       <DependentUpon>FormUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="OyunPenceresi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OyunPenceresi.Designer.cs">
+      <DependentUpon>OyunPenceresi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Ayarlar.resx">
+      <DependentUpon>Ayarlar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -83,6 +98,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormUser.resx">
       <DependentUpon>FormUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OyunPenceresi.resx">
+      <DependentUpon>OyunPenceresi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
