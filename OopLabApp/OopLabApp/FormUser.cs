@@ -57,8 +57,6 @@ namespace OopLabApp
             Usertxt.Select();
             this.AcceptButton = Userlogin; //userform'da username textbox'inda enter tusu ile login yapma
   
-
-
         }
        
 
@@ -81,6 +79,12 @@ namespace OopLabApp
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
             Userpsw.PasswordChar = checkBox_User.Checked ? '\0' : '*';
+        }
+
+        private void Usertxt_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
+                e.Handled = true;
         }
     }
 }

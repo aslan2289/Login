@@ -39,7 +39,7 @@ namespace OopLabApp
             // 
             // Adminlgn
             // 
-            this.Adminlgn.Location = new System.Drawing.Point(230, 180);
+            this.Adminlgn.Location = new System.Drawing.Point(230, 190);
             this.Adminlgn.Margin = new System.Windows.Forms.Padding(2);
             this.Adminlgn.Name = "Adminlgn";
             this.Adminlgn.Size = new System.Drawing.Size(160, 24);
@@ -78,6 +78,7 @@ namespace OopLabApp
             this.Admintxt.Size = new System.Drawing.Size(160, 20);
             this.Admintxt.TabIndex = 0;
             this.Admintxt.TextChanged += new System.EventHandler(this.Admintxt_TextChanged);
+            this.Admintxt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Admintxt_KeyPress);
             // 
             // Adminpsw
             // 
@@ -92,7 +93,7 @@ namespace OopLabApp
             // checkBox_Admin
             // 
             this.checkBox_Admin.AutoSize = true;
-            this.checkBox_Admin.Location = new System.Drawing.Point(395, 132);
+            this.checkBox_Admin.Location = new System.Drawing.Point(230, 157);
             this.checkBox_Admin.Name = "checkBox_Admin";
             this.checkBox_Admin.Size = new System.Drawing.Size(102, 17);
             this.checkBox_Admin.TabIndex = 16;

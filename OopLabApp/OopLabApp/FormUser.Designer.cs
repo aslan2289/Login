@@ -68,6 +68,7 @@ namespace OopLabApp
             this.Usertxt.Size = new System.Drawing.Size(160, 20);
             this.Usertxt.TabIndex = 0;
             this.Usertxt.TextChanged += new System.EventHandler(this.Usertxt_TextChanged);
+            this.Usertxt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Usertxt_KeyPress);
             // 
             // Userpsw
             // 
@@ -81,7 +82,7 @@ namespace OopLabApp
             // 
             // Userlogin
             // 
-            this.Userlogin.Location = new System.Drawing.Point(230, 180);
+            this.Userlogin.Location = new System.Drawing.Point(230, 190);
             this.Userlogin.Margin = new System.Windows.Forms.Padding(2);
             this.Userlogin.Name = "Userlogin";
             this.Userlogin.Size = new System.Drawing.Size(160, 24);
@@ -93,7 +94,7 @@ namespace OopLabApp
             // checkBox_User
             // 
             this.checkBox_User.AutoSize = true;
-            this.checkBox_User.Location = new System.Drawing.Point(395, 133);
+            this.checkBox_User.Location = new System.Drawing.Point(230, 157);
             this.checkBox_User.Name = "checkBox_User";
             this.checkBox_User.Size = new System.Drawing.Size(102, 17);
             this.checkBox_User.TabIndex = 11;

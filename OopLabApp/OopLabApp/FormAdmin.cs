@@ -46,9 +46,9 @@ namespace OopLabApp
             Application.Exit();
         }
 
-        private void Admintxt_TextChanged(object sender, EventArgs e) { 
+        private void Admintxt_TextChanged(object sender, EventArgs e) {
 
-
+        
             Admintxt.Focus(); //admin login penceresi acildiginda username textbox'ina focus ol
             this.AcceptButton = Adminlgn; //adminform'da username textbox'inda enter tusu ile login yapma
             
@@ -69,6 +69,12 @@ namespace OopLabApp
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
             Adminpsw.PasswordChar = checkBox_Admin.Checked ? '\0' : '*';
+        }
+
+        private void Admintxt_KeyPress(object sender, KeyPressEventArgs e) //admin penceresinde username kısmına yalnızca harf girilmesine izin verir
+        {
+            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
+                e.Handled = true;
         }
     }
 }
