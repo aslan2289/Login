@@ -34,6 +34,7 @@ namespace OopLabApp
             this.Usertxt = new System.Windows.Forms.TextBox();
             this.Userpsw = new System.Windows.Forms.TextBox();
             this.Userlogin = new System.Windows.Forms.Button();
+            this.checkBox_User = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // label2
@@ -89,11 +90,23 @@ namespace OopLabApp
             this.Userlogin.UseVisualStyleBackColor = true;
             this.Userlogin.Click += new System.EventHandler(this.Userlogin_Click);
             // 
+            // checkBox_User
+            // 
+            this.checkBox_User.AutoSize = true;
+            this.checkBox_User.Location = new System.Drawing.Point(395, 133);
+            this.checkBox_User.Name = "checkBox_User";
+            this.checkBox_User.Size = new System.Drawing.Size(102, 17);
+            this.checkBox_User.TabIndex = 11;
+            this.checkBox_User.Text = "Show Password";
+            this.checkBox_User.UseVisualStyleBackColor = true;
+            this.checkBox_User.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
             // FormUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 366);
+            this.Controls.Add(this.checkBox_User);
             this.Controls.Add(this.Userlogin);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -116,5 +129,6 @@ namespace OopLabApp
         private System.Windows.Forms.TextBox Usertxt;
         private System.Windows.Forms.TextBox Userpsw;
         private System.Windows.Forms.Button Userlogin;
+        private System.Windows.Forms.CheckBox checkBox_User;
     }
 }

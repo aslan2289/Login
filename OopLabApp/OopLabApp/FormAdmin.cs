@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace OopLabApp
 {
@@ -19,17 +20,17 @@ namespace OopLabApp
 
         private void Adminlgn_Click(object sender, EventArgs e)
         {
-            if(Admintxt.Text=="admin" && Adminpsw.Text=="admin")
+            if (Admintxt.Text == "admin" && Adminpsw.Text == "admin")
             {
                 OyunPenceresi oyunPenceresi = new OyunPenceresi();
                 oyunPenceresi.Show(); //Oyunpenceresini göster
                 this.Hide(); //FormAdmini gizle
             }
-            else if(Admintxt.Text=="" || Adminpsw.Text=="")
+            else if (Admintxt.Text == "" || Adminpsw.Text == "")
             {
                 string message = "Belirli alanlar boş bırakılamaz";
                 string title = "Hata";
-                MessageBox.Show(message,title);
+                MessageBox.Show(message, title);
             }
             else
             {
@@ -45,10 +46,13 @@ namespace OopLabApp
             Application.Exit();
         }
 
-        private void Admintxt_TextChanged(object sender, EventArgs e)
-        {
+        private void Admintxt_TextChanged(object sender, EventArgs e) { 
+
+
             Admintxt.Focus(); //admin login penceresi acildiginda username textbox'ina focus ol
             this.AcceptButton = Adminlgn; //adminform'da username textbox'inda enter tusu ile login yapma
+            
+            
         }
 
         private void Adminpsw_TextChanged(object sender, EventArgs e)
@@ -58,7 +62,13 @@ namespace OopLabApp
 
         private void FormAdmin_Load(object sender, EventArgs e)
         {
+           
+           
+        }
 
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            Adminpsw.PasswordChar = checkBox_Admin.Checked ? '\0' : '*';
         }
     }
 }
