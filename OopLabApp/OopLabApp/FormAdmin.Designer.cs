@@ -34,6 +34,7 @@ namespace OopLabApp
             this.label1 = new System.Windows.Forms.Label();
             this.Admintxt = new System.Windows.Forms.TextBox();
             this.Adminpsw = new System.Windows.Forms.TextBox();
+            this.checkBox_Admin = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // Adminlgn
@@ -88,11 +89,23 @@ namespace OopLabApp
             this.Adminpsw.TabIndex = 11;
             this.Adminpsw.TextChanged += new System.EventHandler(this.Adminpsw_TextChanged);
             // 
+            // checkBox_Admin
+            // 
+            this.checkBox_Admin.AutoSize = true;
+            this.checkBox_Admin.Location = new System.Drawing.Point(395, 132);
+            this.checkBox_Admin.Name = "checkBox_Admin";
+            this.checkBox_Admin.Size = new System.Drawing.Size(102, 17);
+            this.checkBox_Admin.TabIndex = 16;
+            this.checkBox_Admin.Text = "Show Password";
+            this.checkBox_Admin.UseVisualStyleBackColor = true;
+            this.checkBox_Admin.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
             // FormAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 366);
+            this.Controls.Add(this.checkBox_Admin);
             this.Controls.Add(this.Adminlgn);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -115,5 +128,6 @@ namespace OopLabApp
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox Admintxt;
         private System.Windows.Forms.TextBox Adminpsw;
+        private System.Windows.Forms.CheckBox checkBox_Admin;
     }
 }
