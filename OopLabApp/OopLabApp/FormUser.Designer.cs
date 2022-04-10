@@ -35,6 +35,7 @@ namespace OopLabApp
             this.Userpsw = new System.Windows.Forms.TextBox();
             this.Userlogin = new System.Windows.Forms.Button();
             this.checkBox_User = new System.Windows.Forms.CheckBox();
+            this.uyebtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label2
@@ -102,11 +103,22 @@ namespace OopLabApp
             this.checkBox_User.UseVisualStyleBackColor = true;
             this.checkBox_User.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
+            // uyebtn
+            // 
+            this.uyebtn.Location = new System.Drawing.Point(230, 231);
+            this.uyebtn.Name = "uyebtn";
+            this.uyebtn.Size = new System.Drawing.Size(160, 23);
+            this.uyebtn.TabIndex = 12;
+            this.uyebtn.Text = "Sign Up";
+            this.uyebtn.UseVisualStyleBackColor = true;
+            this.uyebtn.Click += new System.EventHandler(this.uyebtn_Click);
+            // 
             // FormUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 366);
+            this.Controls.Add(this.uyebtn);
             this.Controls.Add(this.checkBox_User);
             this.Controls.Add(this.Userlogin);
             this.Controls.Add(this.label2);
@@ -131,5 +143,6 @@ namespace OopLabApp
         private System.Windows.Forms.TextBox Userpsw;
         private System.Windows.Forms.Button Userlogin;
         private System.Windows.Forms.CheckBox checkBox_User;
+        private System.Windows.Forms.Button uyebtn;
     }
 }
