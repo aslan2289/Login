@@ -35,7 +35,7 @@ namespace OopLabApp
             // settingsbtn
             // 
             this.settingsbtn.Location = new System.Drawing.Point(211, 134);
-            this.settingsbtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.settingsbtn.Margin = new System.Windows.Forms.Padding(2);
             this.settingsbtn.Name = "settingsbtn";
             this.settingsbtn.Size = new System.Drawing.Size(147, 105);
             this.settingsbtn.TabIndex = 0;
@@ -47,9 +47,10 @@ namespace OopLabApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.settingsbtn);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "OyunPenceresi";
             this.Text = "OyunPenceresi";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.OyunPenceresi_FormClosing);

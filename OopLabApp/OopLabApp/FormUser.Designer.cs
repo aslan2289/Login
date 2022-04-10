@@ -117,6 +117,7 @@ namespace OopLabApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.uyebtn);
             this.Controls.Add(this.checkBox_User);
