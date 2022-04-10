@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
 using System.Xml.Linq;
+using System.Security.Cryptography;
 
 namespace OopLabApp
 {
@@ -35,6 +36,21 @@ namespace OopLabApp
 
         private void Kaydolbtn_Click(object sender, EventArgs e)
         {
+
+            SHA256Managed SHA256 = new SHA256Managed();
+
+            byte[] sifreleme = Encoding.UTF8.GetBytes(textBox2.Text);
+
+            sifreleme = SHA256.ComputeHash(sifreleme);
+
+            StringBuilder sb = new StringBuilder();
+
+            foreach (byte b in sifreleme)
+            {
+                sb.Append(b.ToString("X2"));
+            }
+
+            textBox2.Text = sb.ToString();
 
             XDocument x = XDocument.Load(@"veri.xml");
             x.Element("Kullanicilar").Add(
@@ -82,6 +98,22 @@ namespace OopLabApp
         private void adminManage_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+           
+
+        }
+
+        private void adminManage_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sha256btn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

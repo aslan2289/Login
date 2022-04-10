@@ -32,13 +32,13 @@ namespace OopLabApp
             this.Silbtn = new System.Windows.Forms.Button();
             this.Gnclbtn = new System.Windows.Forms.Button();
             this.Kaydolbtn = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.Label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -54,7 +54,7 @@ namespace OopLabApp
             // 
             // Silbtn
             // 
-            this.Silbtn.Location = new System.Drawing.Point(594, 200);
+            this.Silbtn.Location = new System.Drawing.Point(639, 200);
             this.Silbtn.Name = "Silbtn";
             this.Silbtn.Size = new System.Drawing.Size(90, 23);
             this.Silbtn.TabIndex = 39;
@@ -64,7 +64,7 @@ namespace OopLabApp
             // 
             // Gnclbtn
             // 
-            this.Gnclbtn.Location = new System.Drawing.Point(594, 262);
+            this.Gnclbtn.Location = new System.Drawing.Point(639, 262);
             this.Gnclbtn.Name = "Gnclbtn";
             this.Gnclbtn.Size = new System.Drawing.Size(90, 23);
             this.Gnclbtn.TabIndex = 38;
@@ -74,7 +74,7 @@ namespace OopLabApp
             // 
             // Kaydolbtn
             // 
-            this.Kaydolbtn.Location = new System.Drawing.Point(594, 230);
+            this.Kaydolbtn.Location = new System.Drawing.Point(639, 230);
             this.Kaydolbtn.Name = "Kaydolbtn";
             this.Kaydolbtn.Size = new System.Drawing.Size(90, 23);
             this.Kaydolbtn.TabIndex = 37;
@@ -82,54 +82,55 @@ namespace OopLabApp
             this.Kaydolbtn.UseVisualStyleBackColor = true;
             this.Kaydolbtn.Click += new System.EventHandler(this.Kaydolbtn_Click);
             // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(413, 227);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.TabIndex = 36;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(413, 227);
+            this.textBox8.Location = new System.Drawing.Point(413, 423);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(100, 20);
-            this.textBox8.TabIndex = 36;
+            this.textBox8.TabIndex = 35;
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(413, 423);
+            this.textBox7.Location = new System.Drawing.Point(413, 391);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(100, 20);
-            this.textBox7.TabIndex = 35;
+            this.textBox7.TabIndex = 34;
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(413, 391);
+            this.textBox6.Location = new System.Drawing.Point(413, 358);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 34;
+            this.textBox6.TabIndex = 33;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(413, 358);
+            this.textBox5.Location = new System.Drawing.Point(413, 322);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 33;
+            this.textBox5.TabIndex = 32;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(413, 322);
+            this.textBox4.Location = new System.Drawing.Point(413, 293);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 32;
+            this.textBox4.TabIndex = 31;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(413, 293);
+            this.textBox3.Location = new System.Drawing.Point(413, 259);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 31;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(413, 259);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 30;
+            this.textBox3.TabIndex = 30;
             // 
             // textBox1
             // 
@@ -141,7 +142,7 @@ namespace OopLabApp
             // Label8
             // 
             this.Label8.AutoSize = true;
-            this.Label8.Location = new System.Drawing.Point(46, 423);
+            this.Label8.Location = new System.Drawing.Point(160, 423);
             this.Label8.Name = "Label8";
             this.Label8.Size = new System.Drawing.Size(38, 13);
             this.Label8.TabIndex = 28;
@@ -150,7 +151,7 @@ namespace OopLabApp
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(46, 394);
+            this.label7.Location = new System.Drawing.Point(160, 394);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(43, 13);
             this.label7.TabIndex = 27;
@@ -159,7 +160,7 @@ namespace OopLabApp
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(46, 358);
+            this.label6.Location = new System.Drawing.Point(160, 358);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(24, 13);
             this.label6.TabIndex = 26;
@@ -168,7 +169,7 @@ namespace OopLabApp
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(46, 322);
+            this.label5.Location = new System.Drawing.Point(160, 322);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(45, 13);
             this.label5.TabIndex = 25;
@@ -177,7 +178,7 @@ namespace OopLabApp
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(46, 290);
+            this.label4.Location = new System.Drawing.Point(160, 290);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(78, 13);
             this.label4.TabIndex = 24;
@@ -186,7 +187,7 @@ namespace OopLabApp
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(46, 262);
+            this.label3.Location = new System.Drawing.Point(160, 262);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(80, 13);
             this.label3.TabIndex = 23;
@@ -195,7 +196,7 @@ namespace OopLabApp
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(46, 230);
+            this.label2.Location = new System.Drawing.Point(160, 230);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 13);
             this.label2.TabIndex = 22;
@@ -204,7 +205,7 @@ namespace OopLabApp
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(46, 200);
+            this.label1.Location = new System.Drawing.Point(160, 200);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(55, 13);
             this.label1.TabIndex = 21;
@@ -216,7 +217,7 @@ namespace OopLabApp
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(49, 7);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(705, 157);
+            this.dataGridView1.Size = new System.Drawing.Size(781, 187);
             this.dataGridView1.TabIndex = 20;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -224,17 +225,17 @@ namespace OopLabApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(887, 531);
             this.Controls.Add(this.Silbtn);
             this.Controls.Add(this.Gnclbtn);
             this.Controls.Add(this.Kaydolbtn);
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox8);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.Label8);
             this.Controls.Add(this.label7);
@@ -248,6 +249,7 @@ namespace OopLabApp
             this.Name = "adminManage";
             this.Text = "adminManage";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.adminManage_FormClosing);
+            this.Load += new System.EventHandler(this.adminManage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -259,13 +261,13 @@ namespace OopLabApp
         private System.Windows.Forms.Button Silbtn;
         private System.Windows.Forms.Button Gnclbtn;
         private System.Windows.Forms.Button Kaydolbtn;
+        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label Label8;
         private System.Windows.Forms.Label label7;
