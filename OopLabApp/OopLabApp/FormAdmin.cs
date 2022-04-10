@@ -22,8 +22,8 @@ namespace OopLabApp
         {
             if (Admintxt.Text == "admin" && Adminpsw.Text == "admin")
             {
-                OyunPenceresi oyunPenceresi = new OyunPenceresi();
-                oyunPenceresi.Show(); //Oyunpenceresini göster
+                adminManage adminManage = new adminManage();
+                adminManage.Show(); //Oyunpenceresini göster
                 this.Hide(); //FormAdmini gizle
             }
             else if (Admintxt.Text == "" || Adminpsw.Text == "")
