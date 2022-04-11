@@ -19,7 +19,16 @@ namespace OopLabApp
 
         private void OyunPenceresi_Load(object sender, EventArgs e)
         {
+            AboutUs aboutPencere = new AboutUs();
+            aboutPencere.TopMost = true;
+            aboutPencere.Show();
 
+            if (aboutPencere.Enabled)
+            {
+                this.Enabled = false;
+            }
+
+            
         }
 
         private void OyunPenceresi_FormClosing(object sender, FormClosingEventArgs e)
@@ -48,5 +57,7 @@ namespace OopLabApp
             ayarlarpencere.Show(); //ayarlarpenceresini göster.
 
         }
+
+       
     }
 }
