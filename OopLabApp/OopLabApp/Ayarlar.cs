@@ -23,7 +23,7 @@ namespace OopLabApp
 
         private void RenkSec_Click(object sender, EventArgs e)
         {
-            
+
 
             TextWriter textWriter = new StreamWriter("./save.txt");
 
@@ -45,22 +45,25 @@ namespace OopLabApp
         }
         private void Ayarlar_Load(object sender, EventArgs e)
         {
-            string text = File.ReadAllText("./save.txt");
+            FileStream text = new FileStream("./save.txt", FileMode.Open, FileAccess.Read);
+
+            StreamReader sw = new StreamReader(text);
+            string obj = sw.ReadToEnd();
 
 
-            if (text.Contains("Kırmızı"))
+            if (obj.Contains("Kırmızı"))
             {
                 kırmızıcheck.Checked = true;
             }
-            if (text.Contains("Sarı"))
+            if (obj.Contains("Sarı"))
             {
                 sarıcheck.Checked = true;
             }
-            if (text.Contains("Mor"))
+            if (obj.Contains("Mor"))
             {
                 Morcheck.Checked = true;
             }
-
+            text.Close();
         }
 
         private void sarıcheck_CheckedChanged(object sender, EventArgs e)

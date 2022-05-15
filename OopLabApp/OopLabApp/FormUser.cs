@@ -31,6 +31,9 @@ namespace OopLabApp
                 OyunPenceresi oyunPenceresi = new OyunPenceresi();
                 oyunPenceresi.Show(); //Oyunpenceresini göster.
                 this.Hide(); //Formuseri sakla.
+
+                
+
             }
             else if (Usertxt.Text == "" || Userpsw.Text == "")
             {
@@ -85,6 +88,13 @@ namespace OopLabApp
         {
             if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
                 e.Handled = true;
+        }
+
+        private void uyebtn_Click(object sender, EventArgs e)
+        {
+            Uyeol uyeol = new Uyeol();
+            uyeol.Show(); //Uyeol göster.
+            this.Hide(); //FormUseri Sakla.
         }
     }
 }

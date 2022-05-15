@@ -34,9 +34,10 @@ namespace OopLabApp
             // 
             // settingsbtn
             // 
-            this.settingsbtn.Location = new System.Drawing.Point(281, 165);
+            this.settingsbtn.Location = new System.Drawing.Point(211, 134);
+            this.settingsbtn.Margin = new System.Windows.Forms.Padding(2);
             this.settingsbtn.Name = "settingsbtn";
-            this.settingsbtn.Size = new System.Drawing.Size(196, 129);
+            this.settingsbtn.Size = new System.Drawing.Size(147, 105);
             this.settingsbtn.TabIndex = 0;
             this.settingsbtn.Text = "Settings";
             this.settingsbtn.UseVisualStyleBackColor = true;
@@ -44,10 +45,12 @@ namespace OopLabApp
             // 
             // OyunPenceresi
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.SkyBlue;
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.settingsbtn);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "OyunPenceresi";
             this.Text = "OyunPenceresi";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.OyunPenceresi_FormClosing);
