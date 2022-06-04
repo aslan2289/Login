@@ -16,7 +16,7 @@ namespace OopLabApp
         public Ayarlar()
         {
             InitializeComponent();
-            this.TopMost = true;
+            this.TopMost = false;
         }
 
        
@@ -131,6 +131,27 @@ namespace OopLabApp
                 e.Handled = true;
             }
             
+        }
+
+        private void Helpbtn_Click(object sender, EventArgs e)
+        {
+            Help help = new Help();
+            help.Show();
+            this.Hide();
+        }
+
+        private void ABoutttbtn_Click(object sender, EventArgs e)
+        {
+            About about = new About();
+            about.ShowDialog();
+            this.Hide();
+        }
+
+        private void oynabtn_Click(object sender, EventArgs e)
+        {
+            Oyunuoyna oyun = new Oyunuoyna();
+            oyun.Show();
+            this.Hide();
         }
     }
 }
