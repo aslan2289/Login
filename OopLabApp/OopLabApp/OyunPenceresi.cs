@@ -19,6 +19,10 @@ namespace OopLabApp
 
         private void OyunPenceresi_Load(object sender, EventArgs e)
         {
+            AboutUs aboutPencere = new AboutUs();
+            aboutPencere.ShowDialog();
+            aboutPencere.TopMost = true;
+         
 
         }
 
@@ -48,5 +52,7 @@ namespace OopLabApp
             ayarlarpencere.Show(); //ayarlarpenceresini göster.
 
         }
+
+       
     }
 }
