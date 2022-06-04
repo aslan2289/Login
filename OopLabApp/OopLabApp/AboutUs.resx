@@ -117,4 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas nisl at leo lobortis venenatis. Vivamus eleifend, neque ut tincidunt euismod, odio elit hendrerit ex, non condimentum metus justo a justo. Aliquam molestie enim magna, non hendrerit arcu porttitor et. Ut scelerisque est quam, at pretium lorem feugiat id. Nunc non tincidunt lectus. Praesent justo lacus, pharetra sit amet sodales eget, luctus iaculis lectus. Quisque neque metus, iaculis vitae nibh sit amet, blandit lobortis turpis. Quisque pellentesque ac velit in fringilla. Aenean vestibulum, magna at tincidunt commodo, nibh ante porttitor dolor, sed tempor metus mauris vitae lacus. Integer fringilla placerat quam, sed commodo urna tincidunt eu. Nunc commodo quam sit amet tempor semper. Etiam magna sem, dignissim non scelerisque sed, aliquam id sapien. Aenean pharetra eros a tellus ullamcorper, non rutrum felis dapibus.</value>
+  </data>
 </root>

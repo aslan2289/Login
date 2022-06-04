@@ -20,15 +20,10 @@ namespace OopLabApp
         private void OyunPenceresi_Load(object sender, EventArgs e)
         {
             AboutUs aboutPencere = new AboutUs();
+            aboutPencere.ShowDialog();
             aboutPencere.TopMost = true;
-            aboutPencere.Show();
+         
 
-            if (aboutPencere.Enabled)
-            {
-                this.Enabled = false;
-            }
-
-            
         }
 
         private void OyunPenceresi_FormClosing(object sender, FormClosingEventArgs e)
