@@ -50,7 +50,7 @@ namespace OopLabApp
         {
             Ayarlar ayarlarpencere = new Ayarlar();
             ayarlarpencere.Show(); //ayarlarpenceresini göster.
-
+            this.Hide();
         }
 
        
